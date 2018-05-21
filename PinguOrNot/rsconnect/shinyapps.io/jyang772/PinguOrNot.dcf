@@ -1,0 +1,12 @@
+name: PinguOrNot
+title: PinguOrNot
+username:
+account: jyang772
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 346310
+bundleId: 1384373
+url: https://jyang772.shinyapps.io/PinguOrNot/
+when: 1526893866.41387
+asMultiple: FALSE
+asStatic: FALSE
