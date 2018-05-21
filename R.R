@@ -1,5 +1,5 @@
-original_dataset_dir <- "~/Downloads/deeplearn/pingu"
-base_dir <- "~/Downloads/deeplearn/pingu"
+original_dataset_dir <- "~/PinguOrNot/pingu"
+base_dir <- "~/PinguOrNot/pingu"
 dir.create(base_dir)
 train_dir <- file.path(base_dir, "train")
 dir.create(train_dir)
@@ -76,6 +76,7 @@ history <- model %>% fit_generator(
   validation_steps = 50
 )
 
+save_model_hdf5("./PinguOrNot/pingu.hd5")
 
 pred <- function(img_path) {
   img <- image_load(img_path, target_size = c(150, 150)) %>%           
@@ -90,7 +91,7 @@ pred <- function(img_path) {
   preds
 }
 
-img_path <- "~/Downloads/deeplearn/pingu/validation/pingu/00000000.jpg"
+img_path <- "~/PinguOrNot/pingu/validation/other/00000001.jpg"
 print(pred(img_path))
 
 ####### DISPLAY ACTIVATION MAPS ################

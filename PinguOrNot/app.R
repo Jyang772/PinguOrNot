@@ -1,7 +1,7 @@
 library(shiny)
 library(keras)
 
-model <- load_model_hdf5("~/pingu.h5")
+model <- load_model_hdf5("~/PinguOrNot/pingu.hd5")
 
 pred <- function(img_path) {
   img <- image_load(img_path, target_size = c(150, 150)) %>%           
