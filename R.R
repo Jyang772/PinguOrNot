@@ -91,7 +91,7 @@ pred <- function(img_path) {
   preds
 }
 
-img_path <- "~/PinguOrNot/pingu/validation/other/00000001.jpg"
+img_path <- "~/PinguOrNot/pingu/validation/other/00000002.jpg"
 print(pred(img_path))
 
 ####### DISPLAY ACTIVATION MAPS ################
